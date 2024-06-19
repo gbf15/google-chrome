@@ -4,13 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Search Page</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+}
+
+#searchInput {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #4285F4;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #357ae8;
+}
+
+@media (max-width: 600px) {
+    .search-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+    </style>
 </head>
 <body>
     <div class="search-container">
         <input type="text" id="searchInput" placeholder="Search Google...">
         <button onclick="performSearch()">Search</button>
     </div>
-    <script src="script.js"></script>
+    <script>
+        function performSearch() {
+    const query = document.getElementById('searchInput').value;
+    const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+    window.location.href = searchUrl;
+}
+
+    </script>
 </body>
 </html>
