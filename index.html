@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-btn{
+width: 50px;
+margin-left: 50px;
+}
+#profile-photo{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+#hist{
+    border: 2px black solid;
+    border-radius: 3px;
+    margin-left: 30px;
+}
+#info-icon{
+    width: 50px;
+}
+#google-logo{
+    width: 120px;
+    margin-left: 210px;
+}
+
+.search-container {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    overflow: hidden;
+    width: 300px;
+    margin-left: 130px;
+    margin-top: 35px;
+}
+
+#search-input {
+    border: none;
+    padding: 10px;
+    width: 200px;
+    outline: none;
+
+}
+
+#search-button {
+    border: none;
+    background-color: #4285f4;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+#search-button:hover {
+    background-color: #357ae8;
+}
+@media (max-width: 600px) {
+    .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-btn{
+width: 50px;
+margin-left: 250px;
+}
+#profile-photo{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: --70px;
+}
+#hist{
+    border: 2px black solid;
+    border-radius: 3px;
+}
+#info-icon{
+    width: 50px;
+    margin-right: 250px;
+}
+#google-logo{
+    width: 120px;
+    margin-left: 400px;
+}
+
+.search-container {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    overflow: hidden;
+    width: 300px;
+    margin-left: 320px;
+    margin-top: 35px;
+}
+
+#search-input {
+    border: none;
+    padding: 10px;
+    width: 200px;
+    outline: none;
+
+}
+
+#search-button {
+    border: none;
+    background-color: #4285f4;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+#search-button:hover {
+    background-color: #357ae8;
+}
+}
+@media (max-width: 320px) {
+    .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-btn{
+width: 50px;
+margin-left: 460px;
+}
+#profile-photo{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: -80px;
+}
+#hist{
+    border: 2px black solid;
+    border-radius: 3px;
+    margin-left: -20px;
+}
+#info-icon{
+    width: 50px;
+    margin-right: 280px;
+}
+#google-logo{
+    width: 120px;
+    margin-left: 650px;
+}
+
+.search-container {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    overflow: hidden;
+    width: 300px;
+    margin-left: 550px;
+    margin-top: 55px;
+}
+
+#search-input {
+    border: none;
+    padding: 10px;
+    width: 200px;
+    outline: none;
+
+}
+
+#search-button {
+    border: none;
+    background-color: #4285f4;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+#search-button:hover {
+    background-color: #357ae8;
+}
+}
+
+@media (max-width: 375px) {
+
+    .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-btn{
+width: 50px;
+margin-left: 510px;
+}
+#profile-photo{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: -90px;
+}
+#hist{
+    border: 2px black solid;
+    border-radius: 3px;
+    margin-left: -20px;
+}
+#info-icon{
+    width: 50px;
+    margin-right: 460px;
+}
+#google-logo{
+    width: 120px;
+    margin-left: 640px;
+}
+
+.search-container {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    overflow: hidden;
+    width: 300px;
+    margin-left: 550px;
+    margin-top: 55px;
+}
+
+#search-input {
+    border: none;
+    padding: 10px;
+    width: 200px;
+    outline: none;
+
+}
+
+#search-button {
+    border: none;
+    background-color: #4285f4;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+#search-button:hover {
+    background-color: #357ae8;
+}
+
+}
+
+/* Large phones */
+@media (max-width: 414px) {
+  /* CSS rules for large phones */
+}
+
+/* Phablets */
+@media (max-width: 768px) {
+  /* CSS rules for phablets */
+}
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <table>
+                <tr>
+                    <td><img src="img/images-removebg-preview (2).png"  alt="home-btn" id="home-btn"></td>
+                    <td><img src="img/game.jpeg" id="profile-photo" alt="profile-photo"></td>
+                    <td><p id="hist">:D</p></td>
+                    <td><img src="img/images-removebg-preview (4).png" alt="info-icon" id="info-icon"></td>
+                </tr>
+                <tr>
+                    <td> <img src="img/images-removebg-preview (5).png" id="google-logo" alt="google-logo-pn"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="search-container">
+                            <input type="text" id="search-input" placeholder="Search...">
+                            <button id="search-button">Search</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script href="script.js" defer>
+        // script.js
+
+document.getElementById('search-button').addEventListener('click', function() {
+    let query = document.getElementById('search-input').value;
+    if (query) {
+        let searchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        window.open(searchUrl, '_blank');
+    }
+});
+
+document.getElementById('search-input').addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        document.getElementById('search-button').click();
+    }
+});
+
+    </script>
+</body>
+</html>
